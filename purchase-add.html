@@ -13,6 +13,19 @@
 	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
 	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+
+
+
+    <link href="assets/plugins/fancy-file-uploader/fancy_fileupload.css" rel="stylesheet" />
+    <link href="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.css" rel="stylesheet" />
+    <link href="assets/plugins/datetimepicker/css/classic.css" rel="stylesheet" />
+    <link href="assets/plugins/datetimepicker/css/classic.time.css" rel="stylesheet" />
+    <link href="assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+
 	<!-- loader-->
 	<link href="assets/css/pace.min.css" rel="stylesheet" />
 	<script src="assets/js/pace.min.js"></script>
@@ -26,7 +39,7 @@
 	<link rel="stylesheet" href="assets/css/dark-theme.css" />
 	<link rel="stylesheet" href="assets/css/semi-dark.css" />
 	<link rel="stylesheet" href="assets/css/header-colors.css" />
-	<title>MY SHOP - ADD CATEGORY</title>
+	<title>MY SHOP - PRUCHASES ADD</title>
 </head>
 
 <body>
@@ -621,13 +634,13 @@
 
 				<!--breadcrumb-->
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">CATEGORY</div>
+					<div class="breadcrumb-title pe-3">eCommerce</div>
 					<div class="ps-3">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb mb-0 p-0">
 								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
 								</li>
-								<li class="breadcrumb-item active" aria-current="page">Add New Category</li>
+								<li class="breadcrumb-item active" aria-current="page">Add New Product</li>
 							</ol>
 						</nav>
 					</div>
@@ -648,43 +661,290 @@
 
               <div class="card">
 				  <div class="card-body p-4">
-					  <h5 class="card-title">Add New Category</h5>
+					  <h5 class="card-title">Add Purchases</h5>
 					  <hr/>
                        <div class="form-body mt-4">
 					    <div class="row">
-						   <div class="col-lg-12">
+							<div class="col-lg-12">
+								<div class="border border-3 p-4 rounded mb-5">
+								<div class="row g-3">
+									
+									<div class="col-md-6">
+										<label for="inputPrice" class="form-label">Invoice</label>
+										<input type="text" class="form-control" id="inputPrice" placeholder="582414" disabled>
+									</div>
+									<div class="col-md-6">
+										<label for="inputVatprice" class="form-label">Date</label>
+										<input type="date" class="form-control" id="inputVatprice">
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="border border-3 p-4 rounded mb-5">
+								<div class="row g-3">
+									
+									<div class="col-12 mb-3">
+										<label for="enterCustomerName" class="form-label">Select Customer</label>
+										<input type="text" class="form-control" id="enterCustomerName" placeholder="Enter Customer Name">
+									</div>
+									<div class="col-12 mb-3">
+										<div class="col-12">
+											<button type="submit" class="btn btn-info px-5">Save</button>
+										</div>
+									</div>
+
+									
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="border border-3 p-4 rounded mb-5 bg-light-success">
+								<div class="row g-3">
+									
+								
+									<div class="col-12">
+										<div class="col">
+											<!-- Button trigger modal -->
+											<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleLargeModal">Add New Customer</button>
+										<!-- Modal -->
+										<div class="modal fade" id="exampleLargeModal" tabindex="-1" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title">Add New Customer</h5>
+															<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+														</div>
+														<div class="modal-body">
+															<form action="">
+																<div class="mb-3 col-12">
+																	<label for="inputEnterYourName" class="col-12 col-form-label">Enter Customer Name</label>
+																	<div class="col-12">
+																		<input type="text" class="form-control" id="inputEnterSupplierName" placeholder="Enter Supplier Name" required>
+																	</div>
+																</div>
+																<div class="row mb-3">
+																	<label for="inputEnterYourName" class="col-12 col-form-label">Enter Company Name</label>
+																	<div class="col-12">
+																		<input type="text" class="form-control" id="inputEnterCompanyName" placeholder="Enter Company Name" required>
+																	</div>
+																</div>
+																<div class="row mb-3">
+																	<label for="inputPhoneNo2" class="col-12 col-form-label">Phone No</label>
+																	<div class="col-12">
+																		<input type="text" class="form-control" id="inputPhoneNo2" placeholder="Phone No" required>
+																	</div>
+																</div>
+																<div class="row mb-3">
+																	<label for="inputEmailAddress2" class="col-12 col-form-label">Email Address</label>
+																	<div class="col-12">
+																		<input type="email" class="form-control" id="inputEmailAddress2" placeholder="Email Address" required>
+																	</div>
+																</div>
+																<div class="row mb-3">
+																	<label for="inputBinNumber" class="col-12 col-form-label">BIN</label>
+																	<div class="col-12">
+																		<input type="text" class="form-control" id="inputBinNumber" placeholder="Enter BIN">
+																	</div>
+																</div>
+																<div class="row mb-3">
+																	<label for="inputTinNumber" class="col-12 col-form-label">TIN</label>
+																	<div class="col-12">
+																		<input type="text" class="form-control" id="inputTinNumber" placeholder="Enter TIN">
+																	</div>
+																</div>
+																<div class="row mb-3">
+																	<label for="inputAddress" class="col-12 col-form-label">Address</label>
+																	<div class="col-12">
+																		<input type="text" class="form-control" id="inputAddress" placeholder="Address" required>
+																	</div>
+																</div>
+																<div class="row mb-3">
+																	<label class="form-label col-12 col-form-label">Start Date</label>
+																	<div class="col-12">
+																		<input type="text" class="form-control datepicker" />
+																	</div>
+																</div>
+																<div class="mb-3">
+																</div>
+																<div class="row mb-3">
+																	<label for="inputChoosePassword2" class="col-12 col-form-label">Upload Image</label>
+																	<div class="col-12">
+																		<div class="card-body">
+																			<input id="fancy-file-upload" type="file" name="files" accept=".jpg, .png, image/jpeg, image/png" multiple>
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<label class="col-sm-3 col-form-label"></label>
+																	<div class="col-12">
+																		<button type="submit" class="btn btn-info px-5">Save</button>
+																	</div>
+																</div>
+															</form>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+															<button type="button" class="btn btn-primary">Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						   <div class="col-lg-8">
                            <div class="border border-3 p-4 rounded">
 							<div class="mb-3">
-								<label for="inputProductTitle" class="form-label">Category Name</label>
-								<input type="email" class="form-control" id="inputProductTitle" placeholder="Enter Category Name">
+								<label for="inputProductTitle" class="form-label">Product Title</label>
+								<input type="text" class="form-control" id="inputProductTitle" placeholder="Enter product title">
 							  </div>
 							  <div class="mb-3">
-								<label for="inputCollection" class="form-label">Supplier</label>
-								<select class="form-select" id="inputCollection">
-									<option>Select Supplier</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								  </select>
+								<label for="selectSupplier" class="form-label">Supplier</label>
+								<input type="text" class="form-control" id="selectSupplier" placeholder="Supplier" disabled>
+							  </div>
+							  <div class="mb-3">
+								<label for="selectCategory" class="form-label">Category</label>
+								<input type="text" class="form-control" id="selectCategory" placeholder="Category" disabled>
 							  </div>
 
-							  <div class="mb-3">
-								<label for="inputProductDescription" class="form-label">Description</label>
-								<textarea class="form-control" id="inputProductDescription" rows="3" style="resize: none;"></textarea>
+							  <div class="mb-5">
+								<label for="inputQuantity" class="form-label">Quantity</label>
+								<select class="form-select" id="inputQuantity">
+									<option></option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									
+								  </select>
 							  </div>
-							  <div class="mb-3">
-								<label for="inputProductDescription" class="form-label">Upload Images(Optional)</label>
-								<input id="image-uploadify" type="file" accept=".xlsx,.xls,image/*,.doc,audio/*,.docx,video/*,.ppt,.pptx,.txt,.pdf" multiple>
-							  </div>
-							  <div class="mt-5 text-center">
-								
-								
-									<button type="submit" class="btn btn-info px-5">Save</button>
-								
+							 
+								<div class="" style="text-align: right;">
+								   <button type="button" class="btn btn-primary" style="width: 120px; text-align: right;">Add to Cart</button>
+								</div>
+
+
+								<h6 class="mb-0 text-uppercase">Selected Products</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body table-responsive">
+								<table class="table mb-0 table-striped">
+									<thead>
+										<tr>
+											<th scope="col">SL</th>
+											<th scope="col">Name</th>
+											<th scope="col">Company</th>
+											<th scope="col">Purchase Rate</th>
+											<th scope="col">Quantity</th>
+											<th scope="col">Total Amount</th>
+											<th scope="col">Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>01</td>
+											<td>T-shirt</td>
+											<td>Happy Codding</td>
+											<td>2500</td>
+											<td>3</td>
+											<td>7500</td>
+											<td>
+												<button type="button" class="btn btn-outline-danger"><i class="bx bx-trash me-0"></i>
+												</button>
+												
+											</td>
+										</tr>
+										<tr>
+											<td>01</td>
+											<td>T-shirt</td>
+											<td>Happy Codding</td>
+											<td>2500</td>
+											<td>3</td>
+											<td>7500</td>
+											<td>
+												<button type="button" class="btn btn-outline-danger"><i class="bx bx-trash me-0"></i>
+												</button>
+												
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											
+											<th colspan="1">Total = </th>
+											<th scope="col">15000</th>
+											<th scope="col"></th>
+											
+										</tr>
+									</tfoot>
+								</table>
 							</div>
+						</div>
+										 
                             </div>
 						   </div>
-						   
+						   <div class="col-lg-4">
+							<div class="border border-3 p-4 rounded bg-light-success">
+                              <div class="row g-3">
+								<div class="col-md-6">
+									<label for="inputPrice" class="form-label">Sub Total</label>
+									<input type="email" class="form-control" id="inputPrice" placeholder="00.00">
+								  </div>
+								  <div class="col-md-6">
+									<label for="inputVatprice" class="form-label">Vat</label>
+									<input type="text" class="form-control" id="inputVatprice" placeholder="07%">
+								  </div>
+								  <div class="col-12">
+									<label for="inputVatWithprice" class="form-label">Vat With Price</label>
+									<input type="text" class="form-control" id="inputVatWithprice" placeholder="0000">
+								  </div>
+								  <div class="col-md-6">
+									<label for="inputComission" class="form-label">Comission</label>
+									<input type="email" class="form-control" id="inputComission" placeholder="05%">
+								  </div>
+								  <div class="col-md-6">
+									<label for="inputComissionWithPrice" class="form-label">Comission With Price</label>
+									<input type="email" class="form-control" id="inputComissionWithPrice" placeholder="0000">
+								  </div>
+								  <div class="col-12">
+									<label for="autoTotalPrice" class="form-label">Total</label>
+									<input type="text" class="form-control" id="autoTotalPrice" placeholder="0000">
+								  </div>
+
+
+								</div>
+								<hr/>
+								<div class="row row-cols-auto g-3">
+									
+									<div class="col">
+										<button type="button" class="btn btn-outline-success px-5"><i class='bx bx-heart-circle mr-1'></i>Full Paid</button>
+									</div>
+									<div class="col">
+										<button type="button" class="btn btn-outline-danger px-5"><i class='bx bx-refresh mr-1'></i>Reset</button>
+									</div>
+									<div class="col">
+										<button type="button" class="btn btn-outline-warning  px-5"><i class='bx bx-notepad mr-1' ></i>Due</button>
+									</div>
+									<div class="col">
+										<button type="button" class="btn btn-outline-primary px-5"><i class='bx bxs-basket mr-1' ></i>Purchase</button>
+									</div>
+									
+								</div>
+
+
+
+								 
+							  </div> 
+						  </div>
+						  </div>
 					   </div><!--end row-->
 					</div>
 				  </div>
@@ -802,17 +1062,50 @@
 	<!-- Bootstrap JS -->
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
 	<!--plugins-->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
-	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
-	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-	<script src="assets/plugins/input-tags/js/tagsinput.js"></script>
-	<script src="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('#image-uploadify').imageuploadify();
-		})
-	</script>
+	
+
+
+
+
+
+ <!--plugins-->
+ <script src="assets/js/jquery.min.js"></script>
+ <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+ <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+ <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+ <script src="assets/plugins/input-tags/js/tagsinput.js"></script>
+ <script src="assets/plugins/fancy-file-uploader/jquery.ui.widget.js"></script>
+ <script src="assets/plugins/fancy-file-uploader/jquery.fileupload.js"></script>
+ <script src="assets/plugins/fancy-file-uploader/jquery.iframe-transport.js"></script>
+ <script src="assets/plugins/fancy-file-uploader/jquery.fancy-fileupload.js"></script>
+ <script src="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.js"></script>
+ <script>
+	 $('#fancy-file-upload').FancyFileUpload({
+		 params: {
+			 action: 'fileuploader'
+		 },
+		 maxfilesize: 1000000
+	 });
+
+ </script>
+ <script>
+	 $(document).ready(function() {
+		 $('#image-uploadify').imageuploadify();
+	 })
+
+ </script>
+ <script src="assets/plugins/datetimepicker/js/picker.js"></script>
+ <script src="assets/plugins/datetimepicker/js/picker.time.js"></script>
+ <script src="assets/plugins/datetimepicker/js/picker.date.js"></script>
+ <script src="assets/plugins/bootstrap-material-datetimepicker/js/moment.min.js"></script>
+ <script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.min.js"></script>
+ <script>
+	 $('.datepicker').pickadate({
+		 selectMonths: true,
+		 selectYears: true
+	 });
+
+ </script>
 	<!--app JS-->
 	<script src="assets/js/app.js"></script>
 </body>
