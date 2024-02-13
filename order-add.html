@@ -13,6 +13,8 @@
 	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
 	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+    <link href="assets/plugins/select2/css/select2-bootstrap4.css" rel="stylesheet" />
 	<!-- loader-->
 	<link href="assets/css/pace.min.css" rel="stylesheet" />
 	<script src="assets/js/pace.min.js"></script>
@@ -658,24 +660,24 @@
 								<label for="inputProductTitle" class="form-label">Product Title</label>
 								<input type="email" class="form-control" id="inputProductTitle" placeholder="Enter product title">
 							  </div>
-							  <div class="mb-3">
-								<label for="inputCollection" class="form-label">Supplier</label>
-								<select class="form-select" id="inputCollection">
-									<option></option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								  </select>
-							  </div>
-							  <div class="mb-3">
-								<label for="inputCollection" class="form-label">Catagories</label>
-								<select class="form-select" id="inputCollection">
-									<option></option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								  </select>
-							  </div>
+							  <div class="col-12 mb-3">
+								<label class="form-label">Select Supplier</label>
+								<select class="single-select">
+									<option value=""></option>
+									<option value="HAPPY CODDING IT">HAPPY CODDING IT</option>
+									<option value="BD SHOP">BD SHOP</option>
+									<option value="Daraz">Daraz</option>
+								</select>
+							</div>
+							<div class="col-12 mb-3">
+								<label class="form-label">Select Category</label>
+								<select class="single-select">
+									<option value=""></option>
+									<option value="MOBILE">MOBILE</option>
+									<option value="PC">PC</option>
+									<option value="LAPTIOP">LAPTIOP</option>
+								</select>
+							</div>
 							  <div class="mb-3">
 								<label for="inputProductDescription" class="form-label">Description</label>
 								<textarea class="form-control" id="inputProductDescription" rows="3"></textarea>
@@ -949,6 +951,22 @@
 			$('#image-uploadify').imageuploadify();
 		})
 	</script>
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
+    <script>
+        $('.single-select').select2({
+            theme: 'bootstrap4',
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            placeholder: $(this).data('placeholder'),
+            allowClear: Boolean($(this).data('allow-clear')),
+        });
+        $('.multiple-select').select2({
+            theme: 'bootstrap4',
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            placeholder: $(this).data('placeholder'),
+            allowClear: Boolean($(this).data('allow-clear')),
+        });
+
+    </script>
 	<!--app JS-->
 	<script src="assets/js/app.js"></script>
 </body>
