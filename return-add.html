@@ -8,11 +8,22 @@
     <!--favicon-->
     <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
     <!--plugins-->
+    <link href="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.css" rel="stylesheet" />
+    <link href="assets/plugins/input-tags/css/tagsinput.css" rel="stylesheet" />
     <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
     <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
-    <link href="assets/plugins/highcharts/css/highcharts.css" rel="stylesheet" />
     <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
-    <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <link href="assets/plugins/fancy-file-uploader/fancy_fileupload.css" rel="stylesheet" />
+    <link href="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.css" rel="stylesheet" />
+    <link href="assets/plugins/datetimepicker/css/classic.css" rel="stylesheet" />
+    <link href="assets/plugins/datetimepicker/css/classic.time.css" rel="stylesheet" />
+    <link href="assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+    <link href="assets/plugins/select2/css/select2-bootstrap4.css" rel="stylesheet" />
     <!-- loader-->
     <link href="assets/css/pace.min.css" rel="stylesheet" />
     <script src="assets/js/pace.min.js"></script>
@@ -26,7 +37,7 @@
     <link rel="stylesheet" href="assets/css/dark-theme.css" />
     <link rel="stylesheet" href="assets/css/semi-dark.css" />
     <link rel="stylesheet" href="assets/css/header-colors.css" />
-    <title>MY SHOP - DAILY REPORT</title>
+    <title>MY SHOP - RETURN ADD</title>
 </head>
 
 <body>
@@ -255,42 +266,40 @@
         <!--end sidebar wrapper -->
         <!--start header -->
         <header>
-            <div class="topbar d-flex align-items-center bg-dark shadow-none border-light-2 border-bottom">
+            <div class="topbar d-flex align-items-center">
                 <nav class="navbar navbar-expand">
-                    <div class="mobile-toggle-menu text-white me-3"><i class='bx bx-menu'></i>
+                    <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
                     </div>
                     <div class="top-menu-left d-none d-lg-block">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="app-emailbox.html"><i class='bx bx-envelope'></i></a>
+                                <a class="nav-link" href="app-emailbox.html"><i class='bx bx-envelope'></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="app-chat-box.html"><i class='bx bx-message'></i></a>
+                                <a class="nav-link" href="app-chat-box.html"><i class='bx bx-message'></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="app-fullcalender.html"><i class='bx bx-calendar'></i></a>
+                                <a class="nav-link" href="app-fullcalender.html"><i class='bx bx-calendar'></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="app-to-do.html"><i class='bx bx-check-square'></i></a>
+                                <a class="nav-link" href="app-to-do.html"><i class='bx bx-check-square'></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="search-bar flex-grow-1">
                         <div class="position-relative search-bar-box">
-                            <form>
-                                <input type="text" class="form-control search-control" autofocus placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
-                                <span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
-                            </form>
+                            <input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
+                            <span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
                         </div>
                     </div>
                     <div class="top-menu ms-auto">
                         <ul class="navbar-nav align-items-center">
                             <li class="nav-item mobile-search-icon">
-                                <a class="nav-link text-white" href="javascript:;"> <i class='bx bx-search'></i>
+                                <a class="nav-link" href="#"> <i class='bx bx-search'></i>
                                 </a>
                             </li>
                             <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
+                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <div class="row row-cols-3 g-3 p-3">
@@ -328,7 +337,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
                                     <i class='bx bx-bell'></i>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
@@ -444,7 +453,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
                                     <i class='bx bx-comment'></i>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
@@ -595,11 +604,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="user-box dropdown border-light-2">
+                    <div class="user-box dropdown">
                         <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="assets/images/avatars/avatar-1.png" class="user-img" alt="user avatar">
                             <div class="user-info ps-3">
-                                <p class="user-name mb-0 text-white">ADESH SARKER</p>
+                                <p class="user-name mb-0">ADESH SARKER</p>
                                 <p class="designattion mb-0">Admin</p>
                             </div>
                         </a>
@@ -630,105 +639,217 @@
             <div class="page-content">
                 <!--breadcrumb-->
                 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                    <div class="breadcrumb-title pe-3">Daily Reports</div>
+                    <div class="breadcrumb-title pe-3">eCommerce</div>
+                    <div class="ps-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0 p-0">
+                                <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Add New Product</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="ms-auto">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Settings</button>
+                            <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"> <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"> <a class="dropdown-item" href="javascript:;">Action</a>
+                                <a class="dropdown-item" href="javascript:;">Another action</a>
+                                <a class="dropdown-item" href="javascript:;">Something else here</a>
+                                <div class="dropdown-divider"></div> <a class="dropdown-item" href="javascript:;">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--end breadcrumb-->
-                <!-- Total In -->
                 <div class="card">
-                    <div class="page-breadcrumb d-none d-sm-flex align-items-center p-3 bg-dark">
-                        <div class="breadcrumb-title pe-3" style="color: rgb(0, 255, 255);">Total In</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive text-center">
-                            <table id="" class="table">
-                                <thead>
-                                    <tr class="p-5">
-                                        <th>Total Sale</th>
-                                        <th>Cash Sale</th>
-                                        <th>Due Sale</th>
-                                        <th>Profit</th>
-                                        <th>Payment In</th>
-                                        <th>Total Product</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="p-3">
-                                        <td class="p-3">2800</td>
-                                        <td class="p-3">3%</td>
-                                        <td class="p-3">2600</td>
-                                        <td class="p-3">2600</td>
-                                        <td class="p-3">320</td>
-                                        <td class="p-3">600000</td>
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Add Return</h5>
+                        <hr />
+                        <div class="form-body mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="border border-3 p-4 rounded mb-5">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputPrice" class="form-label">Invoice</label>
+                                                <input type="text" class="form-control" id="inputPrice" placeholder="INVOICE 3-2-1">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputVatprice" class="form-label">Date</label>
+                                                <input type="date" class="form-control" id="inputVatprice">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="border border-3 p-4 rounded mb-5">
+                                        <div class="row g-3">
+                                            <div class="col-12 mb-3">
+                                                <label class="form-label" for="customerName">Select Customer</label>
+                                                <input type="text" class="form-control" id="customerName" placeholder="Customer Name">
+                                            </div>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="border border-3 p-4 rounded">
                                         
-                                        <td class="p-3">
-                                            <button type="button" class="btn btn-outline-danger"><i class="bx bx-trash me-0"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-outline-success"><i class="bx bxs-edit me-0"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-outline-primary"><i class="bx bxs-file-pdf me-0"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                            </table>
+                                        <div class="col-12 mb-3">
+                                            <label class="form-label">Select Supplier</label>
+                                            <select class="single-select">
+                                                <option value=""></option>
+                                                <option value="HAPPY CODDING IT">HAPPY CODDING IT</option>
+                                                <option value="BD SHOP">BD SHOP</option>
+                                                <option value="Daraz">Daraz</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <label class="form-label">Select Category</label>
+                                            <select class="single-select">
+                                                <option value=""></option>
+                                                <option value="MOBILE">MOBILE</option>
+                                                <option value="PC">PC</option>
+                                                <option value="LAPTIOP">LAPTIOP</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="inputProductTitle" class="form-label">Product Title</label>
+                                            <input type="text" class="form-control" id="inputProductTitle" placeholder="Enter product title">
+                                        </div>
+                                        <div class="mb-5">
+                                            <label for="inputProductQuantity" class="form-label">Quantity</label>
+                                            <input type="number" value="" class="form-control" id="inputProductQuantity" placeholder="Enter product Quantity">
+                                        </div>
+                                        <div class="" style="text-align: right;">
+                                            <button type="button" class="btn btn-primary" style="width: 140px; text-align: right;">Add to Return</button>
+                                        </div>
+                                        <h6 class="mb-0 text-uppercase">Selected Products</h6>
+                                        <hr />
+                                        <div class="card">
+                                            <div class="card-body table-responsive">
+                                                <table class="table mb-0 table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">SL</th>
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">Company</th>
+                                                            <th scope="col">Return Rate</th>
+                                                            <th scope="col">Quantity</th>
+                                                            <th scope="col">Total Amount</th>
+                                                            <th scope="col">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>01</td>
+                                                            <td>T-shirt</td>
+                                                            <td>Happy Codding</td>
+                                                            <td>2500</td>
+                                                            <td>3</td>
+                                                            <td>7500</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-success"><i class="bx bx-edit me-0"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-danger"><i class="bx bx-trash me-0"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>01</td>
+                                                            <td>T-shirt</td>
+                                                            <td>Happy Codding</td>
+                                                            <td>2500</td>
+                                                            <td>3</td>
+                                                            <td>7500</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-success"><i class="bx bx-edit me-0"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-danger"><i class="bx bx-trash me-0"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th colspan="1">Total = </th>
+                                                            <th scope="col">15000</th>
+                                                            <th scope="col"></th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="border border-3 p-4 rounded bg-light-success">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputPrice" class="form-label">Sub Total</label>
+                                                <input type="email" class="form-control" id="inputPrice" placeholder="00.00">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputVatprice" class="form-label">Vat</label>
+                                                <input type="text" class="form-control" id="inputVatprice" placeholder="07%">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputVatWithprice" class="form-label">Vat With Price</label>
+                                                <input type="text" class="form-control" id="inputVatWithprice" placeholder="0000">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputComission" class="form-label">Comission</label>
+                                                <input type="email" class="form-control" id="inputComission" placeholder="05%">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputComissionWithPrice" class="form-label">Comission With Price</label>
+                                                <input type="email" class="form-control" id="inputComissionWithPrice" placeholder="0000">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="autoTotalPrice" class="form-label">GRAND TOTAL</label>
+                                                <input type="text" class="form-control" id="autoTotalPrice" placeholder="0000">
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row row-cols-auto g-3">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-outline-success px-5"><i class='bx bx-heart-circle mr-1'></i>Full Paid</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-outline-danger px-5"><i class='bx bx-refresh mr-1'></i>Reset</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-outline-warning  px-5"><i class='bx bx-notepad mr-1'></i>Due</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-outline-primary px-5" onclick="window.location.href = 'invoice.html'"><i class='bx bxs-basket mr-1'></i>Return</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                 <!-- Total Out -->
-                 <div class="card">
-                    <div class="page-breadcrumb d-none d-sm-flex align-items-center p-3 bg-danger">
-                        <div class="breadcrumb-title pe-3" style="color: rgb(254, 254, 254);">Total Out</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive text-center">
-                            <table id="" class="table">
-                                <thead>
-                                    <tr class="p-5">
-                                        <th>Total Purchase</th>
-                                        <th>Cash Purchase</th>
-                                        <th>Due Purchase</th>
-                                        <th>Salary</th>
-                                        <th>Payment Out</th>
-                                        <th>Total Product</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="p-3">
-                                        <td class="p-3">2800</td>
-                                        <td class="p-3">3%</td>
-                                        <td class="p-3">2600</td>
-                                        <td class="p-3">2600</td>
-                                        <td class="p-3">320</td>
-                                        <td class="p-3">600000</td>
-                                        
-                                        <td class="p-3">
-                                            <button type="button" class="btn btn-outline-danger"><i class="bx bx-trash me-0"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-outline-success"><i class="bx bxs-edit me-0"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-outline-primary"><i class="bx bxs-file-pdf me-0"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                            </table>
-                        </div>
+                        <!--end row-->
                     </div>
                 </div>
             </div>
         </div>
-        <!--end page wrapper -->
-        <!--start overlay-->
-        <div class="overlay toggle-icon"></div>
-        <!--end overlay-->
-        <!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
-        <!--End Back To Top Button-->
-        <footer class="page-footer">
-            <p class="mb-0">Develop By <a href="https://happycoddingit.com/" target="_blank">HAPPY CODDING IT</a> Copyright © 2024. All right reserved.</p>
-        </footer>
     </div>
+    <!--end page wrapper -->
+    <!--start overlay-->
+    <div class="overlay toggle-icon"></div>
+    <!--end overlay-->
+    <!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <!--End Back To Top Button-->
+    <footer class="page-footer">
+        <p class="mb-0">Develop By <a href="https://happycoddingit.com/" target="_blank">HAPPY CODDING IT</a> Copyright © 2024. All right reserved.</p>
+    </footer>
     <!--end wrapper-->
     <!--start switcher-->
     <div class="switcher-wrapper">
@@ -829,26 +950,57 @@
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!--plugins-->
+    <!--plugins-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
     <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
     <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-    <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+    <script src="assets/plugins/input-tags/js/tagsinput.js"></script>
+    <script src="assets/plugins/fancy-file-uploader/jquery.ui.widget.js"></script>
+    <script src="assets/plugins/fancy-file-uploader/jquery.fileupload.js"></script>
+    <script src="assets/plugins/fancy-file-uploader/jquery.iframe-transport.js"></script>
+    <script src="assets/plugins/fancy-file-uploader/jquery.fancy-fileupload.js"></script>
+    <script src="assets/plugins/Drag-And-Drop/dist/imageuploadify.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#example').DataTable();
+        $('#fancy-file-upload').FancyFileUpload({
+            params: {
+                action: 'fileuploader'
+            },
+            maxfilesize: 1000000
         });
 
     </script>
     <script>
         $(document).ready(function() {
-            var table = $('#example2').DataTable({
-                lengthChange: false,
-                buttons: ['copy', 'excel', 'pdf', 'print']
-            });
-            table.buttons().container()
-                .appendTo('#example2_wrapper .col-md-6:eq(0)');
+            $('#image-uploadify').imageuploadify();
+        })
+
+    </script>
+    <script src="assets/plugins/datetimepicker/js/picker.js"></script>
+    <script src="assets/plugins/datetimepicker/js/picker.time.js"></script>
+    <script src="assets/plugins/datetimepicker/js/picker.date.js"></script>
+    <script src="assets/plugins/bootstrap-material-datetimepicker/js/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.min.js"></script>
+    <script>
+        $('.datepicker').pickadate({
+            selectMonths: true,
+            selectYears: true
+        });
+
+    </script>
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+    <script>
+        $('.single-select').select2({
+            theme: 'bootstrap4',
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            placeholder: $(this).data('placeholder'),
+            allowClear: Boolean($(this).data('allow-clear')),
+        });
+        $('.multiple-select').select2({
+            theme: 'bootstrap4',
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            placeholder: $(this).data('placeholder'),
+            allowClear: Boolean($(this).data('allow-clear')),
         });
 
     </script>
